@@ -1,5 +1,11 @@
 <link href="<?php BASE_URL; ?>css/formations.css" rel="stylesheet">
 
+<?php
+if (!isset($_SESSION['connecte'])) {
+    header("location:accueil");
+}
+?>
+
 <div class="page-content">
     <div class="row">
         <div class="col-md-2" style="min-height: 1500px">
@@ -39,11 +45,12 @@
                                     <a href='formation_detail/".$get_formation['id_f']."'>
                                         <img src='images/formations/".$get_formation['image']."' class='img-responsive' alt='formation img'>
                                             <div class='des'>
-                                                <h4>".$get_formation['nom']."</h4>
+                                                <h4>".$get_formation['nom_f']."</h4>
                                                 <h5>Durée : ".$get_formation['nb_jour']." jours</h5>
-                                                <h5>Coût : ".$get_formation['credits']." crédits</h5><hr>
-                                                <p>".substr($get_formation['description'],0,100)." 
-			                                    <span>...</span></p>
+                                                <h5>Coût : ".$get_formation['credits']." crédits</h5>
+                                                <h5>Date de début : ".$get_formation['date_debut']."</h5>
+                                                <hr>
+                                                <p>".substr($get_formation['description'],0,100)."<span>...</span></p>
                                             </div>
                                     </a>
                                 </div>

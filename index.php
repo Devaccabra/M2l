@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require "model/connection.php";
+require "controller/connection.php";
 
 define('BASE_URL',dirname($_SERVER['REQUEST_URI']));
 

@@ -1,5 +1,11 @@
 <link href="http://localhost/M2l/css/formations.css" rel="stylesheet">
 
+<?php
+if (!isset($_SESSION['connecte'])) {
+    header("location:accueil");
+}
+?>
+
 <div class="page-content">
     <div class="row">
         <div class="col-md-2" style="min-height: 150px">
@@ -44,12 +50,14 @@
                           <div class='col-md-5 wow fadeInUp' data-wow-delay='0.9s'>
                                 <div class='wrapper'>
                                             <div class=''>
-                                                <h1>".$get_formation['nom']."</h1>
+                                                <h1>".$get_formation['nom_f']."</h1>
                                                 <h2>Durée : ".$get_formation['nb_jour']." jours</h5>
-                                                <h2>Coût : ".$get_formation['credits']." crédits</h5><hr>
+                                                <h2>Coût : ".$get_formation['credits']." crédits</h5>
+                                                <h2>Date de début : ".$get_formation['date_debut']."</h5>
+                                                <hr>
                                                 <p style='font-size:14px;'>".$get_formation['description']."</p><hr>
                                                 <p style='font-size:14px;'>Crédits après l'achat : ".($get_salaries['credits'] - $get_formation['credits'])."</p>
-                                                <a href='#' class='btn btn-lg btn-primary'>Suivre cette formation</a>
+                                                <a href='../add_formation/".$get_formation['id_f']."' class='addFormation btn btn-lg btn-primary'>Suivre cette formation</a>
                                             </div>
                                 </div>
                           </div>";

@@ -23,7 +23,23 @@
 <body>
 
 <?php
+
+try
+{
+	$bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8","root","",
+		array(
+			PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
+		));
+}
+catch (Exception $e)
+{
+	echo "Erreur de connection";
+}
+
+
 if (isset($_SESSION['connecte']) == true) {
+	$requete = $bdd->query("SELECT * FROM salaries WHERE id_s=".$_SESSION['id_s']." ");
+	$get_salaries = $requete->fetch();
 	?>
 
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -51,7 +67,10 @@ if (isset($_SESSION['connecte']) == true) {
 					<li>
 						<form class="navbar-form" role="search">
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search" name="q">
+								<input type="text" class="form-control barre-chercher" id="barre" placeholder="Search" name="q">
+									<ul class="form-group resultat-recherche panel" style="position: absolute; width: 500px; margin-top: 40px; margin-left: -200px">
+										<!-- résultat recherche.php -->
+									</ul>
 								<div class="input-group-btn">
 									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
 								</div>
@@ -62,16 +81,16 @@ if (isset($_SESSION['connecte']) == true) {
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $_SESSION['login']; ?><b
 								class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="profile">Profil</a></li>
+							<li><a href="http://localhost/M2l/profile">Profil</a></li>
 							<li class="divider"></li>
-							<li><a href="logout">Déconnection</a></li>
+							<li><a href="http://localhost/M2l/logout">Déconnection</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#"><?= $_SESSION['credits']; ?><span> Cts </span><i class="fa fa-plus" aria-hidden="true"></i></a>
+						<a href="#"><?= $get_salaries['credits']; ?><span> Cts </span><i class="fa fa-plus" aria-hidden="true"></i></a>
 					</li>
 					<li>
-						<a href="#"><?= $_SESSION['jour']; ?><span> Jours </span><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+						<a href="#"><?= $get_salaries['jour']; ?><span> Jours </span><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 						</a>
 					</li>
 				</ul>
@@ -89,6 +108,10 @@ if (isset($_SESSION['connecte']) == true) {
 	</div>
 
 
+<?php
+if (isset($_SESSION['connecte'])) {
+?>
+
 	<footer>
 		<div class="container">
 
@@ -99,10 +122,15 @@ if (isset($_SESSION['connecte']) == true) {
 		</div>
 	</footer>
 
+<?php } ?>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://localhost/M2l/js/main.js"></script>
 <script src="http://localhost/M2l/bootstrap/js/bootstrap.min.js"></script>
 <script src="http://localhost/M2l/js/custom.js"></script>
+<script src="http://localhost/M2l/js/recherche.js"></script>
+
 </body>
 </html>
