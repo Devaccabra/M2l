@@ -28,7 +28,8 @@ if(isset($_POST['submit']))
         $_SESSION['credits'] = $reponse['credits'];
         $_SESSION['jour'] = $reponse['jour'];
         $_SESSION['id_s'] = $reponse['id_s'];
-        $_SESSION['admin'] = $reponse['admin'];
+        $_SESSION['chef'] = $reponse['chef'];
+        $_SESSION['equipe'] = $reponse['equipe'];
         header("Location:formations");
         die();
     }

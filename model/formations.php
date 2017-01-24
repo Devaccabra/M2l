@@ -1,3 +1,3 @@
 <?php
 
-    $requete = $bdd->query("SELECT * FROM formations");
+$requete = $bdd->query("SELECT * FROM formations");

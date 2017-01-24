@@ -39,15 +39,54 @@ if (!isset($_SESSION['connecte'])) {
                 <h1>FORMATIONS DISPONIBLES</h1><hr><br>
                 <?php
                     while ($get_formation = $requete->fetch()){
-                        echo "";
-                        echo "<div class='col-md-3 wow fadeInUp' data-wow-delay='0.9s'>
+                        $check = $bdd->query("SELECT * FROM historique WHERE id_f= ".$get_formation['id_f']." AND id_s= ".$_SESSION['id_s']." ");
+                        $get_etat = $check->fetch();
+                        if($check->rowCount() == 1 )
+                        {
+                            if ($get_etat['etat'] == 0){
+                                echo "<div class='col-md-3 wow fadeInUp' data-wow-delay='0.9s'>
                                 <div class='wrapper'>
                                     <a href='formation_detail/".$get_formation['id_f']."'>
                                         <img src='images/formations/".$get_formation['image']."' class='img-responsive' alt='formation img'>
                                             <div class='des'>
                                                 <h4>".$get_formation['nom_f']."</h4>
                                                 <h5>Durée : ".$get_formation['nb_jour']." jours</h5>
-                                                <h5>Coût : ".$get_formation['credits']." crédits</h5>
+                                                <h5>Date de début : ".$get_formation['date_debut']."</h5>
+                                                <hr>
+                                                <p>".substr($get_formation['description'],0,30)."<span>...</span></p>
+                                                <p style='font-size:14px;' class='alert-warning'>En attente de confirmation...</p>
+                                            </div>
+                                    </a>
+                                </div>
+                              </div>";
+                            }
+                            else {
+                                echo "<div class='col-md-3 wow fadeInUp' data-wow-delay='0.9s'>
+                                <div class='wrapper'>
+                                    <a href='formation_detail/".$get_formation['id_f']."'>
+                                        <img src='images/formations/".$get_formation['image']."' class='img-responsive' alt='formation img'>
+                                            <div class='des'>
+                                                <h4>".$get_formation['nom_f']."</h4>
+                                                <h5>Durée : ".$get_formation['nb_jour']." jours</h5>
+                                                <h5>Date de début : ".$get_formation['date_debut']."</h5>
+                                                <hr>
+                                                <p>".substr($get_formation['description'],0,30)."<span>...</span></p>
+                                                <p style='font-size:14px;' class='alert-success'>Formation accepté par l'administrateur</p>
+                                            </div>
+                                    </a>
+                                </div>
+                              </div>";
+                            }
+                        }
+                        else {
+                            echo "<div class='col-md-3 wow fadeInUp' data-wow-delay='0.9s'>
+                                <div class='wrapper'>
+                                    <a href='formation_detail/".$get_formation['id_f']."'>
+                                        <img src='images/formations/".$get_formation['image']."' class='img-responsive' alt='formation img'>
+                                            <div class='des'>
+                                                <h4>".$get_formation['nom_f']."</h4>
+                                                <h5>Durée : ".$get_formation['nb_jour']." jours</h5>
+                                                <h5>Coût : ".$get_formation['credits_f']." crédits</h5>
                                                 <h5>Date de début : ".$get_formation['date_debut']."</h5>
                                                 <hr>
                                                 <p>".substr($get_formation['description'],0,100)."<span>...</span></p>
@@ -55,6 +94,7 @@ if (!isset($_SESSION['connecte'])) {
                                     </a>
                                 </div>
                               </div>";
+                        }
                     }
                 ?>
             </div>
