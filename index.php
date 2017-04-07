@@ -1,9 +1,10 @@
 <?php
 session_start();
+//session_destroy();
 
 require "controller/connection.php";
 
-define('BASE_URL',dirname($_SERVER['REQUEST_URI']));
+define('BASE_URL',dirname($_SERVER['SCRIPT_NAME']));
 
 if(!isset($_GET['p']) || $_GET['p']=="")
 {

@@ -1,4 +1,4 @@
-<?php
+-<?php
 
 if(isset($_GET['id'])){
 
@@ -40,11 +40,11 @@ if(isset($_GET['id'])){
     
                     $update = $stmt->execute();
     
-                    if ($_SESSION['admin'] == 1) 
+                    if ($_SESSION['chef'] == 1)
                     {
                         $ins = "INSERT INTO historique (id_s, id_f, date_achat, heure_achat, etat) VALUES (" . $_SESSION['id_s'] . ", " . $_GET['id'] . ", NOW(), NOW(), 1)";
                     }
-                    if ($_SESSION['admin'] == 0) 
+                    if ($_SESSION['chef'] == 0)
                     {
                         $ins = "INSERT INTO historique (id_s, id_f, date_achat, heure_achat, etat) VALUES (" . $_SESSION['id_s'] . ", " . $_GET['id'] . ", NOW(), NOW(), 0)";
                     }

@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".barre-chercher").keyup(function(){
 
         $.post(
-            'controller/recherche.php',
+            'http://localhost/M2l/controller/recherche.php',
             {
                 pattern : $(".barre-chercher").val()
             },

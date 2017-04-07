@@ -5,14 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
-	<link href="http://localhost/M2l/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?=BASE_URL?>/css/bootstrap.min.css" rel="stylesheet">
 	<!-- styles -->
-	<link href="http://localhost/M2l/css/styles.css" rel="stylesheet">
+	<link href="<?=BASE_URL?>/css/styles.css" rel="stylesheet">
+	<link href="<?=BASE_URL?>/css/chat.css" rel="stylesheet">
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-	<link rel="stylesheet" href="http://localhost/M2l/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?=BASE_URL?>/css/font-awesome.min.css">
 
 
 	<!--[if lt IE 9]>
@@ -42,7 +43,7 @@ if (isset($_SESSION['connecte']) == true) {
 	$get_salaries = $requete->fetch();
 	?>
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" target="_blank">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -52,7 +53,7 @@ if (isset($_SESSION['connecte']) == true) {
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="http://localhost/M2l/formations">M2L POWA</a>
+			<a class="navbar-brand" href="<?=BASE_URL?>/formations">M2L POWA</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,9 +61,27 @@ if (isset($_SESSION['connecte']) == true) {
 			<?php
 			if (isset($_SESSION['connecte'])) {
 				?>
-
-
+				
 				<ul class="nav navbar-nav navbar-right">
+					<?php
+					if ($_SESSION['admin']) {
+						?>
+						<li>
+							<a href="<?=BASE_URL?>/admin_panel">Gérer</a>
+						</li>
+						<?php
+					}
+					if ($_SESSION['chef']) {
+						?>
+						<li>
+							<a href="<?=BASE_URL?>/chef_panel">Gérer</a>
+						</li>
+						<?php
+					}
+					?>
+					<li>
+						<a href="<?=BASE_URL?>/formations">Formations</a>
+					</li>
 
 					<li>
 						<form class="navbar-form" role="search">
@@ -81,9 +100,9 @@ if (isset($_SESSION['connecte']) == true) {
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $_SESSION['login']; ?><b
 								class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="http://localhost/M2l/profile">Profil</a></li>
+							<li><a href="<?=BASE_URL?>/profile">Profil</a></li>
 							<li class="divider"></li>
-							<li><a href="http://localhost/M2l/logout">Déconnection</a></li>
+							<li><a href="<?=BASE_URL?>/logout">Déconnection</a></li>
 						</ul>
 					</li>
 					<li>
@@ -103,10 +122,16 @@ if (isset($_SESSION['connecte']) == true) {
 
 	<div class="page-content min-height-content">
 		<div class="row">
+
 			<?php echo $content; ?>
+
 		</div>
 	</div>
 
+<div id="chat">
+	<!-- OUVERTURE DU CHAT -->
+</div>
+<!-- FAIS APPARAITRE UN NOUVEAU CHAT AU CLIC -->
 
 <?php
 if (isset($_SESSION['connecte'])) {
@@ -127,10 +152,16 @@ if (isset($_SESSION['connecte'])) {
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://localhost/M2l/js/main.js"></script>
-<script src="http://localhost/M2l/bootstrap/js/bootstrap.min.js"></script>
-<script src="http://localhost/M2l/js/custom.js"></script>
-<script src="http://localhost/M2l/js/recherche.js"></script>
+<script src="<?=BASE_URL?>/js/main.js"></script>
+<script src="<?=BASE_URL?>/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?=BASE_URL?>/js/custom.js"></script>
+<script src="<?=BASE_URL?>/js/recherche.js"></script>
+<script src="<?=BASE_URL?>/js/modif-admin.js"></script>
+<script src="<?=BASE_URL?>/js/profile.js"></script>
+<script src="<?=BASE_URL?>/js/chat.js"></script>
+<script src="<?=BASE_URL?>/js/infinite-scroll.js"></script>
+<script src="<?=BASE_URL?>/js/accueil.js"></script>
+<script src="<?=BASE_URL?>/js/rand-mdp.js"></script>
 
 </body>
 </html>
