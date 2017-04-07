@@ -2,112 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53aec1fc-261f-4727-8076-340eb9652edb" name="Default" comment="Beaucoup de changements...">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/default-avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/mcdm2ljpg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/photo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/synthese.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/uml.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formations/2016-07-30 13.28.00.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formations/9==ok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formations/bite.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formations/bitebis.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formations/biteseub.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formations/xtreme-people.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/recherche.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class/chat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/admin_add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/admin_modif.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/admin_panel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/admin_supp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/chef_add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/chef_panel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/chef_supp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/create-chat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/decline.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/envoi-message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/modif-profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/more-formations.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/uploads.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/accueil.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/chat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/accueil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/chat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/infinite-scroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modif-admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/rand-mdp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/admin_add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/admin_modif.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/admin_modif_salarie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/admin_panel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/admin_supp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/chef_add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/chef_panel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/chef_supp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/create-chat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/decline.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/modif-profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/more-formations.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/recup-message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/uploads.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin_add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin_modif.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin_panel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/admin_supp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/chef_add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/chef_panel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/chef_supp.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/rand_mdp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/about-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/plan-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/portfolio-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/portfolio-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/portfolio-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/portfolio-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/portfolio-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/portfolio-img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/slide1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/slide2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/slide3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/slide4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/slide5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/thumb1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/thumb2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/thumb3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/thumb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/thumb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/team1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/team2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/team3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/rand_mdp.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/formations.css" afterPath="$PROJECT_DIR$/css/formations.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/signin.css" afterPath="$PROJECT_DIR$/css/signin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/recherche.js" afterPath="$PROJECT_DIR$/js/recherche.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/m2l.sql" afterPath="$PROJECT_DIR$/m2l.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/accueil.php" afterPath="$PROJECT_DIR$/model/accueil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/add_formation.php" afterPath="$PROJECT_DIR$/model/add_formation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/connection.php" afterPath="$PROJECT_DIR$/model/connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/delete.php" afterPath="$PROJECT_DIR$/model/delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/formation_detail.php" afterPath="$PROJECT_DIR$/model/formation_detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/formations.php" afterPath="$PROJECT_DIR$/model/formations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/logout.php" afterPath="$PROJECT_DIR$/model/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/profile.php" afterPath="$PROJECT_DIR$/model/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/recherche.php" afterPath="$PROJECT_DIR$/model/recherche.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/accueil.php" afterPath="$PROJECT_DIR$/view/accueil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/formation_detail.php" afterPath="$PROJECT_DIR$/view/formation_detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/formations.php" afterPath="$PROJECT_DIR$/view/formations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/layout.php" afterPath="$PROJECT_DIR$/view/layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/profile.php" afterPath="$PROJECT_DIR$/view/profile.php" />
     </list>
     <ignored path="M2l.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -277,7 +172,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="layout.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/view/layout.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="227">
@@ -286,6 +181,16 @@
                     <marker date="1490798127497" expanded="true" signature="1048:1082" ph="SELECT * FRO... salaries" />
                     <marker date="1490798127497" expanded="true" signature="2329:2348" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+            <entry file="vcs://C:/wamp/www/M2l/.htaccess">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -351,16 +256,6 @@
                     <marker date="1490088028745" expanded="true" signature="1807:2776" ph="..." />
                     <marker date="1490088028745" expanded="true" signature="1891:2720" ph="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chef_supp.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controller/chef_supp.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -515,7 +410,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -607,6 +501,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -616,6 +511,22 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="61" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="62" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="585" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="61" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="60" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="61" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="577" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -715,6 +626,7 @@
       <workItem from="1490705204015" duration="17738000" />
       <workItem from="1490973576552" duration="752000" />
       <workItem from="1491571073752" duration="477000" />
+      <workItem from="1491571810277" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="Le changement c'est maintenant">
       <created>1484820776260</created>
@@ -727,17 +639,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333234000" />
+    <option name="totallyTimeSpent" value="333651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1604" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115869015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2754569" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5025189" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.4974811" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -765,6 +677,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
     <MESSAGE value="Le changement c'est maintenant" />
     <MESSAGE value="Beaucoup de changements..." />
     <option name="LAST_COMMIT_MESSAGE" value="Beaucoup de changements..." />
