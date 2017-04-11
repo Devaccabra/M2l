@@ -2,7 +2,7 @@
 session_start();
 
 try {
-    $bdd = new PDO("mysql:host=mysql.m2l.local;dbname=wbensoussan;charset=utf8", "wbensoussan", "azerty12",
+    $bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8", "root", "",
         array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
         ));

@@ -5,3 +5,6 @@ $requete2 = $bdd->query("SELECT credits FROM salaries where id_s = ".$_SESSION['
 
 $check = $bdd->query("SELECT * FROM historique WHERE id_f= ".$_GET['id']." AND id_s= ".$_SESSION['id_s']." ");
 $get_etat = $check->fetch();
+
+$comment = $bdd->query("SELECT * FROM commentaire C, salaries S WHERE C.id_f= ".$_GET['id']." AND C.id_s = S.id_s LIMIT 0,5 ");
+

@@ -161,6 +161,7 @@ if (isset($_SESSION['connecte'])) {
 <script src="<?=BASE_URL?>/js/chat.js"></script>
 <script src="<?=BASE_URL?>/js/infinite-scroll.js"></script>
 <script src="<?=BASE_URL?>/js/accueil.js"></script>
+<script src="<?=BASE_URL?>/js/comment.js"></script>
 <script src="<?=BASE_URL?>/js/rand-mdp.js"></script>
 
 </body>
