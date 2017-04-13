@@ -29,8 +29,8 @@
                             <?php
                             echo "<select name='equipe' class='form-control'>";
                             echo "<option value='0'>Prestataire de la formation</option>";
-                            while ($prestataire = $requete2->fetch()){
-                                echo "<option value='".$prestataire['id_p']."'>". ($prestataire['nom_p']) . " - Prestataire : ".$prestataire['id_p']."</option>";
+                            while ($prestataire = $requete2->fetch()) {
+                                echo "<option value='" . $prestataire['id_p'] . "'>" . ($prestataire['nom_p']) . " - Prestataire : " . $prestataire['id_p'] . "</option>";
                             }
                             ?>
                             </select>
@@ -79,7 +79,8 @@
 
                     <div class="form-group">
                         <div class="col-sm-6 col-sm-offset-3">
-                            <input id="submit" name="submit_formation" type="submit" class="form-control btn btn-primary">
+                            <input id="submit" name="submit_formation" type="submit"
+                                   class="form-control btn btn-primary">
                         </div>
                     </div>
 
@@ -122,7 +123,8 @@
 
                     <div class="form-group">
                         <div class="col-sm-6 col-sm-offset-3">
-                            <input id="textinput" name="mdp" type="text" placeholder="Mot de passe du salarié" class="form-control input-md"><a href="">Générer aléatoirement</a>
+                            <input id="textinput" name="mdp" type="text" placeholder="Mot de passe du salarié"
+                                   class="form-control input-md"><a href="">Générer aléatoirement</a>
                         </div>
                     </div>
 
@@ -131,8 +133,8 @@
                             <?php
                             echo "<select name='equipe' class='form-control'>";
                             echo "<option value='0'>Chef du salarié</option>";
-                            while ($chef = $requete->fetch()){
-                                echo "<option value='".$chef['equipe']."'>". (($chef['nom']) . " " . ($chef['prenom'])) ." - Chef : ".$chef['equipe']."</option>";
+                            while ($chef = $requete->fetch()) {
+                                echo "<option value='" . $chef['equipe'] . "'>" . (($chef['nom']) . " " . ($chef['prenom'])) . " - Chef : " . $chef['equipe'] . "</option>";
                             }
                             ?>
                             </select>
@@ -199,7 +201,8 @@
 
                     <div class="form-group">
                         <div class="col-sm-6 col-sm-offset-3">
-                            <input id="textinput" name="mdp" type="text" placeholder="Mot de passe du chef" class="form-control input-md"><a href="">Générer aléatoirement</a>
+                            <input id="textinput" name="mdp" type="text" placeholder="Mot de passe du chef"
+                                   class="form-control input-md"><a href="">Générer aléatoirement</a>
                         </div>
                     </div>
 
@@ -287,7 +290,6 @@
             <?php
         }
         ?>
-
 
 
     </div>

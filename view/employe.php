@@ -83,7 +83,7 @@
                                         <td>" . $result4['nb_jour'] . " Jours</td>
                                         <td>" . $result4['date_achat'] . "</td>
                                         <td>" . $result4['heure_achat'] . "</td>
-                                        <th class='text-center'><a href='http://localhost/M2l/delete/".$result4['id_h']."'><i style='color:red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='http://localhost/M2l/delete/" . $result4['id_h'] . "'><i style='color:red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
                                     </tr>";
                                         $compteur++;
                                     }

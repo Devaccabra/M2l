@@ -1,8 +1,7 @@
-
 <div class="page-content">
     <div class="row">
         <div>
-            
+
             <?php
             if ($_GET['id'] == 1) {
                 ?>
@@ -115,7 +114,7 @@
                                                         <td>" . $result2['login'] . "</td>
                                                         <td><input id='nb-jours-salarie' type='number' name='nb-jour' class='form-control' value='" . $result2['jour'] . "'></td>
                                                         <td><input id='nb-credits-salarie' type='number' name='nom' class='form-control' value='" . $result2['credits'] . "'></td>
-                                                        <th class='text-center'><button class='modif-salarie-button btn btn-primary' value='".$result2['id_s']."'>Modifier</button></th>
+                                                        <th class='text-center'><button class='modif-salarie-button btn btn-primary' value='" . $result2['id_s'] . "'>Modifier</button></th>
                                                   </tr>";
                                             $compteur++;
                                         }
@@ -254,6 +253,6 @@
             }
             ?>
 
-            </div>
         </div>
     </div>
+</div>
