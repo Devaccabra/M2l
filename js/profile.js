@@ -9,12 +9,24 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("#charging-button").click(function(){
+        $("#modif-profile-success").addClass("hidden");
         $.post("model/modif-profile.php",{ login : $("#login-change").val(), first_name : $("#first-name-change").val(), last_name : $("#last-name-change").val(), email : $("#email-change").val()}).done(function(data){
-            console.log(data);
-
+            $("#modif-profile-charge").removeClass("hidden");
+            setTimeout(chargeModifProfile, 1000);
         });
     });
 });
+
+function chargeModifProfile(){
+    $("#modif-profile-charge").addClass("hidden");
+    $("#modif-profile-success").removeClass("hidden");
+    setTimeout(hideSuccess, 2000);
+}
+
+function hideSuccess(){
+    $("#modif-profile-success").addClass("hidden");
+}
+
 
 $(document).on('click', '#close-preview', function(){
     $('.image-preview').popover('hide');
@@ -94,7 +106,6 @@ $('#sortpicture').change(function() {
     var file_data = $('#sortpicture').prop('files')[0];
     var form_data = new FormData();
     form_data.append('file', file_data);
-    alert(form_data);
     $.ajax({
         url: 'uploads', // point to server-side PHP script
         dataType: 'text',  // what to expect back from the PHP script, if anything
@@ -104,7 +115,7 @@ $('#sortpicture').change(function() {
         data: form_data,
         type: 'post',
         success: function(php_script_response){
-            ajax.reload();
+            window.location.reload();
         }
     });
 });

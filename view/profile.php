@@ -123,8 +123,13 @@
                                     </tbody>
                                 </table>
 
-                                <input id="charging-button" name="submit-change" type="button" class="btn btn-primary"
-                                       value="Modifier">
+                                <div class="row">
+                                    <input id="charging-button" name="submit-change" type="button" class="btn btn-primary col-sm-2" value="Modifier">
+
+                                    <img id="modif-profile-charge" class="center-block col-sm-1 hidden" style="width: 60px;" src="images/loading-profile.gif">
+
+                                    <h5 id="modif-profile-success" class="text-center alert-success hidden col-sm-9 col-sm-offset-1">Modification réussi</h5>
+                                </div>
 
                             </div>
                         </div>

@@ -75,6 +75,8 @@ if (isset($_POST['submit_salarie'])){
     $credit = intval($_POST['credit']);
     $equipe = intval($_POST['equipe']);
 
+    var_dump($nom, $prenom, $login, $mdp, $jour,$credit,$equipe);
+
     $ins = "INSERT INTO salaries (login, password, email, nom, prenom, jour, credits, equipe, inscription_d, inscription_h) VALUES ('$login', '$mdp', 'email-temporaire@exemple.com', '$nom', '$prenom', '$jour', '$credit', '$equipe', NOW(), NOW())";
 
     $inse = $bdd->prepare($ins);
