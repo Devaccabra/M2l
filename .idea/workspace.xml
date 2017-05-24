@@ -2,37 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53aec1fc-261f-4727-8076-340eb9652edb" name="Default" comment="Implémentation du code,&#10;Commentaire instantané">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changelog.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/add-comment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/delete-comment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/get-comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/M2l.iml" afterPath="$PROJECT_DIR$/.idea/M2l.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/photo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/avatar/thumb-1920-415765.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/loading-profile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FAQ.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/__construct.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/acceptpagebreak.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/addfont.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/addlink.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/addpage.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/aliasnbpages.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/cell.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/close.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/error.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/footer.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/getpageheight.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/getpagewidth.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/getstringwidth.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/getx.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/gety.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/header.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/image.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/index.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/line.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/link.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/ln.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/multicell.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/output.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/pageno.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/rect.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setauthor.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setautopagebreak.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setcompression.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setcreator.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setdisplaymode.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setdrawcolor.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setfillcolor.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setfont.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setfontsize.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setkeywords.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setleftmargin.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setlinewidth.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setlink.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setmargins.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setrightmargin.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setsubject.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/settextcolor.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/settitle.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/settopmargin.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setx.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/setxy.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/sety.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/text.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/write.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/courier.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/courierb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/courierbi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/courieri.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/helvetica.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/helveticab.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/helveticabi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/helveticai.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/symbol.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/times.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/timesb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/timesbi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/timesi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/zapfdingbats.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fpdf.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fpdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/install.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1250.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1251.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1252.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1253.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1254.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1255.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1257.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp1258.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/cp874.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-1.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-11.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-15.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-16.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-2.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-4.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-5.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-7.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/iso-8859-9.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/koi8-r.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/koi8-u.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/makefont.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefont/ttfparser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/comment.js" afterPath="$PROJECT_DIR$/js/comment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/profile.js" afterPath="$PROJECT_DIR$/js/profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/add-comment.php" afterPath="$PROJECT_DIR$/model/add-comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/admin_modif_salarie.php" afterPath="$PROJECT_DIR$/model/admin_modif_salarie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/chef_add.php" afterPath="$PROJECT_DIR$/model/chef_add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/connection.php" afterPath="$PROJECT_DIR$/model/connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/get-comment.php" afterPath="$PROJECT_DIR$/model/get-comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/modif-profile.php" afterPath="$PROJECT_DIR$/model/modif-profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/recherche.php" afterPath="$PROJECT_DIR$/model/recherche.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/recup-message.php" afterPath="$PROJECT_DIR$/model/recup-message.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/uploads.php" afterPath="$PROJECT_DIR$/model/uploads.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin_panel.php" afterPath="$PROJECT_DIR$/view/admin_panel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin_supp.php" afterPath="$PROJECT_DIR$/view/admin_supp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/chef_add.php" afterPath="$PROJECT_DIR$/view/chef_add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/chef_panel.php" afterPath="$PROJECT_DIR$/view/chef_panel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/chef_supp.php" afterPath="$PROJECT_DIR$/view/chef_supp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/employe.php" afterPath="$PROJECT_DIR$/view/employe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/formation_detail.php" afterPath="$PROJECT_DIR$/view/formation_detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/formations.php" afterPath="$PROJECT_DIR$/view/formations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/layout.php" afterPath="$PROJECT_DIR$/view/layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/profile.php" afterPath="$PROJECT_DIR$/view/profile.php" />
     </list>
     <ignored path="M2l.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -490,7 +554,7 @@
       <workItem from="1492779308929" duration="21512000" />
       <workItem from="1493365237309" duration="954000" />
       <workItem from="1495631494223" duration="591000" />
-      <workItem from="1495634976353" duration="1183000" />
+      <workItem from="1495634976353" duration="1337000" />
     </task>
     <task id="LOCAL-00001" summary="Le changement c'est maintenant">
       <created>1484820776260</created>
@@ -520,18 +584,25 @@
       <option name="project" value="LOCAL" />
       <updated>1492084990718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implémentation du code,&#10;Commentaire instantané">
+      <created>1495636212001</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495636212001</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410316000" />
+    <option name="totallyTimeSpent" value="410470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13596492" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12402089" sideWeight="0.5081864" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -797,6 +868,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-47">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
