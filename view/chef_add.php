@@ -58,5 +58,7 @@
             </fieldset>
         </form>
 
+        <?php var_dump($mdp);?>
+
     </div>
 </div>

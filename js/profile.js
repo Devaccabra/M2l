@@ -10,12 +10,30 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#charging-button").click(function(){
         $("#modif-profile-success").addClass("hidden");
-        $.post("model/modif-profile.php",{ login : $("#login-change").val(), first_name : $("#first-name-change").val(), last_name : $("#last-name-change").val(), email : $("#email-change").val()}).done(function(data){
+        $.post("model/modif-profile.php",{
+            login : $("#login-change").val(),
+            first_name : $("#first-name-change").val(),
+            last_name : $("#last-name-change").val(),
+            email : $("#email-change").val(),
+            mdp : $("#mdp-change").val(),
+            mdp_verif : $("#mdp-verif-change").val()}
+        )
+        .done(function(data){
             $("#modif-profile-charge").removeClass("hidden");
             setTimeout(chargeModifProfile, 1000);
-        });
-    });
-});
+        })
+        .fail(function(data) {
+            $("#modif-profile-charge").removeClass("hidden");
+            setTimeout(chargeEchecModifProfile, 1000);
+        })
+    })
+})
+
+function chargeEchecModifProfile(){
+    $("#modif-profile-charge").addClass("hidden");
+    $("#modif-profile-failure").removeClass("hidden");
+    setTimeout(hideFailure, 2000);
+}
 
 function chargeModifProfile(){
     $("#modif-profile-charge").addClass("hidden");
@@ -25,6 +43,10 @@ function chargeModifProfile(){
 
 function hideSuccess(){
     $("#modif-profile-success").addClass("hidden");
+}
+
+function hideFailure(){
+    $("#modif-profile-failure").addClass("hidden");
 }
 
 

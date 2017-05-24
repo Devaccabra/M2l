@@ -3,7 +3,7 @@ session_start();
 
 
 try {
-    $bdd = new PDO("mysql:host=localhost;dbname=M2l;charset=utf8", "root", "",
+    $bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8", "root", "",
         array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
         ));
@@ -16,12 +16,30 @@ catch (Exception $e) {
     $new_last_name = $_POST['last_name'];
     $new_first_name = $_POST['first_name'];
     $new_mail = $_POST['email'];
+    $new_mdp = $_POST['mdp'];
+    $new_mdp_verif = $_POST['mdp_verif'];
 
-    $ins = "UPDATE salaries SET email='".$new_mail."', login='".$new_login."', nom='".$new_last_name."', prenom='".$new_first_name."' WHERE id_s='".$_SESSION['id_s']."' ";
+    var_dump($new_mdp, $new_mdp_verif);
 
-    $inse = $bdd->prepare($ins);
+    if(!$new_mdp || !$new_mdp_verif){
+        $ins = "UPDATE salaries SET email='".$new_mail."', login='".$new_login."', nom='".$new_last_name."', prenom='".$new_first_name."' WHERE id_s='".$_SESSION['id_s']."' ";
 
-    $inse->execute();
+        $inse = $bdd->prepare($ins);
+
+        $inse->execute();
+    }else if ($new_mdp == $new_mdp_verif){
+
+        $mdp_secure = sha1($new_mdp);
+
+        $ins = "UPDATE salaries SET email='".$new_mail."', login='".$new_login."', nom='".$new_last_name."', prenom='".$new_first_name."', password='".$mdp_secure."' WHERE id_s='".$_SESSION['id_s']."' ";
+
+        $inse = $bdd->prepare($ins);
+
+        $inse->execute();
+    }else{
+        http_response_code(422);
+    }
+
 
     $_SESSION['email'] = $new_mail;
     $_SESSION['prenom'] = $new_first_name;

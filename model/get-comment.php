@@ -19,12 +19,12 @@ catch (Exception $e) {
 
             while ($get_comment = $comment->fetch()) {
                 echo "
-                <div class=\"col-md-offset-3 col-sm-12 comment-item\" style=\"margin-bottom: 25px;\" id='" . $get_comment['id_c'] . "'>
+                <div class='col-md-offset-3 col-sm-12 comment-item' style='margin-bottom: 25px;' id='" . $get_comment['id_c'] . "'>
 
-                                    <div class=\"col-sm-1\">
-                                        <div class=\"thumbnail\">
-                                            <img class=\"img-responsive user-photo\"
-                                                 src=\"../images/avatar/" . $get_comment['image'] . "\">
+                                    <div class='col-sm-1'>
+                                        <div class='thumbnail'>
+                                            <img class='img-responsive user-photo'
+                                                 src='../images/avatar/" . $get_comment['image'] . "'>
                                         </div>
                                     </div>
 

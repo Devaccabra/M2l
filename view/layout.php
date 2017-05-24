@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="<?= BASE_URL ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= baseURL() ?>css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
-    <link href="<?= BASE_URL ?>/css/styles.css" rel="stylesheet">
-    <link href="<?= BASE_URL ?>/css/chat.css" rel="stylesheet">
+    <link href="<?= baseURL() ?>css/styles.css" rel="stylesheet">
+    <link href="<?= baseURL() ?>css/chat.css" rel="stylesheet">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <link rel="stylesheet" href="<?= BASE_URL ?>/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?= baseURL() ?>css/font-awesome.min.css">
 
 
     <!--[if lt IE 9]>
@@ -50,7 +50,7 @@ if (isset($_SESSION['connecte']) == true) {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?= BASE_URL ?>/formations">M2L POWA</a>
+            <a class="navbar-brand" href="<?= baseURL() ?>formations">M2L POWA</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,20 +64,20 @@ if (isset($_SESSION['connecte']) == true) {
                     if ($_SESSION['admin']) {
                         ?>
                         <li>
-                            <a href="<?= BASE_URL ?>/admin_panel">Gérer</a>
+                            <a href="<?= baseURL() ?>admin_panel">Gérer</a>
                         </li>
                         <?php
                     }
                     if ($_SESSION['chef']) {
                         ?>
                         <li>
-                            <a href="<?= BASE_URL ?>/chef_panel">Gérer</a>
+                            <a href="<?= baseURL() ?>chef_panel">Gérer</a>
                         </li>
                         <?php
                     }
                     ?>
                     <li>
-                        <a href="<?= BASE_URL ?>/formations">Formations</a>
+                        <a href="<?= baseURL() ?>formations">Formations</a>
                     </li>
 
                     <li>
@@ -100,9 +100,9 @@ if (isset($_SESSION['connecte']) == true) {
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $_SESSION['login']; ?><b
                                     class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?= BASE_URL ?>/profile">Profil</a></li>
+                            <li><a href="<?= baseURL() ?>profile">Profil</a></li>
                             <li class="divider"></li>
-                            <li><a href="<?= BASE_URL ?>/logout">Déconnection</a></li>
+                            <li><a href="<?= baseURL() ?>logout">Déconnection</a></li>
                         </ul>
                     </li>
                     <li>
@@ -154,20 +154,23 @@ if (isset($_SESSION['connecte'])) {
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="<?= BASE_URL ?>/js/main.js"></script>
-<script src="<?= BASE_URL ?>/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?= BASE_URL ?>/js/custom.js"></script>
-<script src="<?= BASE_URL ?>/js/recherche.js"></script>
-<script src="<?= BASE_URL ?>/js/modif-admin.js"></script>
-<script src="<?= BASE_URL ?>/js/profile.js"></script>
-<script src="<?= BASE_URL ?>/js/chat.js"></script>
-<script src="<?= BASE_URL ?>/js/infinite-scroll.js"></script>
-<script src="<?= BASE_URL ?>/js/accueil.js"></script>
-<script src="<?= BASE_URL ?>/js/rand-mdp.js"></script>
+<script src="<?= baseURL() ?>js/main.js"></script>
+<script src="<?= baseURL() ?>bootstrap/js/bootstrap.min.js"></script>
+<script src="<?= baseURL() ?>js/custom.js"></script>
+<script src="<?= baseURL() ?>js/recherche.js"></script>
+<script src="<?= baseURL() ?>js/modif-admin.js"></script>
+<script src="<?= baseURL() ?>js/profile.js"></script>
+<script src="<?= baseURL() ?>js/chat.js"></script>
+<script src="<?= baseURL() ?>js/infinite-scroll.js"></script>
+<script src="<?= baseURL() ?>js/accueil.js"></script>
+<script src="<?= baseURL() ?>js/rand-mdp.js"></script>
+<script>
+    var baseUrl = "<?= baseURL() ?>"
+</script>
 <?php
 if ($_GET['p'] == "formation_detail") {
     ?>
-    <script src="<?= BASE_URL ?>/js/comment.js"></script>
+    <script src="<?= baseURL() ?>js/comment.js"></script>
     <?php
 }
 ?>

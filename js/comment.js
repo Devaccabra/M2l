@@ -9,10 +9,11 @@ $(document).ready(function() {
     });
 
     $(".delete-comment").click(function () {
-        alert("Voulez-vous supprimer ce commentaire ?")
-        $.post("../model/delete-comment.php",{ comment : $(this).val()}).done(function(data){
-            window.location.reload();
-        });
+        if (confirm("Voulez-vous supprimer ce commentaire ?")){
+            $.post("../model/delete-comment.php", {comment: $(this).val()}).done(function (data) {
+                window.location.reload();
+            });
+        }
     });
 });
 
@@ -21,10 +22,10 @@ function getComment(){
         $('#comment-post').append(data);
     });
     setTimeout(getComment,2000);
-    setTimeout(hideLicorne,2000);
+    setTimeout(hideLoader,2000);
 }
 getComment();
 
-function hideLicorne(){
+function hideLoader(){
     $("#comment-loading").addClass("hidden");
 }

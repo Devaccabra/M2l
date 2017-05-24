@@ -1,9 +1,9 @@
-<link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>/css/profile.css">
+<link rel="stylesheet" type="text/css" href="<?= baseURL() ?>css/profile.css">
 
 <div>
     <div class="card hovercard">
         <div class="card-background">
-            <img class="card-bkimg" alt="" src="<?= BASE_URL ?>/images/avatar/<?= $myProfile['image']; ?>">
+            <img class="card-bkimg" alt="" src="<?= baseURL() ?>images/avatar/<?= $myProfile['image']; ?>">
             <!-- http://lorempixel.com/850/280/people/9/ -->
         </div>
         <div class="useravatar">
@@ -12,7 +12,7 @@
                 <div class="image-upload">
                     <a class="circle-avatar" href="#">
                         <label for="sortpicture">
-                            <img src="<?= BASE_URL ?>/images/avatar/<?= $myProfile['image']; ?>"/>
+                            <img src="<?= baseURL() ?>images/avatar/<?= $myProfile['image']; ?>"/>
                         </label>
                     </a>
                     <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
@@ -48,7 +48,7 @@
                             <div class="col-md-3 col-lg-2" align="center">
                                 <label for="sortpicture">
                                     <img style="height: 200px; width: 200px;" alt="User Pic"
-                                         src="<?= BASE_URL ?>/images/avatar/<?= $myProfile['image']; ?>"
+                                         src="<?= baseURL() ?>images/avatar/<?= $myProfile['image']; ?>"
                                          class="profile-avatar img-circle img-responsive">
                                 </label>
                             </div>
@@ -75,6 +75,15 @@
                                     <tr>
                                         <td>Login</td>
                                         <td><input id="login-change" name="login" value="<?= $_SESSION['login']; ?>">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Changer de mot de passe</td>
+                                        <td><input id="mdp-change" name="mdp"
+                                                   placeholder="Nouveau mot de passe"> <input id="mdp-verif-change"
+                                                                                              name="mdp-verif"
+                                                                                              placeholder="Confirmation">
                                         </td>
                                     </tr>
 
@@ -129,6 +138,8 @@
                                     <img id="modif-profile-charge" class="center-block col-sm-1 hidden" style="width: 60px;" src="images/loading-profile.gif">
 
                                     <h5 id="modif-profile-success" class="text-center alert-success hidden col-sm-9 col-sm-offset-1">Modification réussi</h5>
+                                    
+                                    <h5 id="modif-profile-failure" class="text-center alert-warning hidden col-sm-9 col-sm-offset-1">Echec lors de la modification</h5>
                                 </div>
 
                             </div>
@@ -282,7 +293,7 @@
                                         <td>" . $result['nb_jour'] . " Jours</td>
                                         <td>" . $result['date_achat'] . "</td>
                                         <td>" . $result['heure_achat'] . "</td>
-                                        <th class='text-center'><a href='" . BASE_URL . "/delete/" . $result['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='" . baseURL() . "delete/" . $result['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
                                     </tr>";
                                             $compteur++;
                                         }
@@ -296,13 +307,13 @@
                                             echo "<tr class='odd gradeX'>
                                         <td>" . $compteur . "</td>
                                         <td>" . $result4['nom_f'] . "</td>
-                                        <td><a class='btn btn-xs btn-primary' href='" . BASE_URL . "/employe/" . $result4['id_s'] . "'>" . (($result4['nom']) . " " . ($result4['prenom'])) . "</td>
+                                        <td><a class='btn btn-xs btn-primary' href='" . baseURL() . "employe/" . $result4['id_s'] . "'>" . (($result4['nom']) . " " . ($result4['prenom'])) . "</td>
                                         <td>" . $result4['date_debut'] . "</td>
                                         <td>" . $result4['nb_jour'] . " Jours</td>
                                         <td>" . $result4['date_achat'] . "</td>
                                         <td>" . $result4['heure_achat'] . "</td>
-                                        <th class='text-center'><a href='" . BASE_URL . "/confirm/" . $result4['id_h'] . "'><i style='color: green;' class=\"fa fa-check\" aria-hidden=\"true\"></i></a></th>
-                                        <th class='text-center'><a href='" . BASE_URL . "/decline/" . $result4['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='" . baseURL() . "confirm/" . $result4['id_h'] . "'><i style='color: green;' class=\"fa fa-check\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='" . baseURL() . "decline/" . $result4['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
                                     </tr>";
                                             $compteur++;
                                         }
@@ -367,7 +378,7 @@
                                         <td>" . $result2['nb_jour'] . " Jours</td>
                                         <td>" . $result2['date_achat'] . "</td>
                                         <td>" . $result2['heure_achat'] . "</td>
-                                        <th class='text-center'><a href='" . BASE_URL . "/M2l/delete/" . $result2['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='" . baseURL() . "delete/" . $result2['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
                                     </tr>";
                                             $compteur++;
                                         }
@@ -385,7 +396,7 @@
                                         <td>" . $result2['nb_jour'] . " Jours</td>
                                         <td>" . $result2['date_achat'] . "</td>
                                         <td>" . $result2['heure_achat'] . "</td>
-                                        <th class='text-center'><a href='" . BASE_URL . "/delete/" . $result2['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='" . baseURL() . "delete/" . $result2['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
                                     </tr>";
                                             $compteur++;
                                         }
@@ -554,12 +565,12 @@
                                         echo "<tr class='odd gradeX'>
                                         <td>" . $compteur . "</td>
                                         <td>" . $result5['nom_f'] . "</td>
-                                        <td><a class='btn btn-xs btn-primary' href='http://localhost/M2l/employe/" . $result5['id_s'] . "'>" . (($result5['nom']) . " " . ($result5['prenom'])) . "</td>
+                                        <td><a class='btn btn-xs btn-primary' href='".baseURL()."employe/" . $result5['id_s'] . "'>" . (($result5['nom']) . " " . ($result5['prenom'])) . "</td>
                                         <td>" . $result5['date_debut'] . "</td>
                                         <td>" . $result5['nb_jour'] . " Jours</td>
                                         <td>" . $result5['date_achat'] . "</td>
                                         <td>" . $result5['heure_achat'] . "</td>
-                                        <th class='text-center'><a href='http://localhost/M2l/delete/" . $result5['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
+                                        <th class='text-center'><a href='".baseURL()."delete/" . $result5['id_h'] . "'><i style='color: red;' class=\"fa fa-times\" aria-hidden=\"true\"></i></a></th>
                                     </tr>";
                                         $compteur++;
                                     }

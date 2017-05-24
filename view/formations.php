@@ -1,4 +1,4 @@
-<link href="<?php BASE_URL; ?>css/formations.css" rel="stylesheet">
+<link href="<?= baseURL() ?>css/formations.css" rel="stylesheet">
 
 <?php
 if (!isset($_SESSION['connecte'])) {
@@ -23,8 +23,8 @@ if (!isset($_SESSION['connecte'])) {
                         if ($get_etat['etat'] == 0) {
                             echo "<div class='col-md-3 wow fadeInUp item' data-wow-delay='0.9s' id='" . $get_formation['id_f'] . "'>
                                         <div class='wrapper'>
-                                            <a href='formation_detail/" . $get_formation['id_f'] . "'>
-                                                <img style='height:350px; width:800px;' src='images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
+                                            <a href='".baseURL()."formation_detail/" . $get_formation['id_f'] . "'>
+                                                <img style='height:350px; width:800px;' src='".baseURL()."images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
                                                     <div class='des'>
                                                         <h4>" . $get_formation['nom_f'] . "</h4>
                                                         <h5>Durée : " . $get_formation['nb_jour'] . " jours</h5>
@@ -40,8 +40,8 @@ if (!isset($_SESSION['connecte'])) {
                         if ($get_etat['etat'] == 2) {
                             echo "<div class='col-md-3 wow fadeInUp item' data-wow-delay='0.9s' id='" . $get_formation['id_f'] . "'>
                                         <div class='wrapper'>
-                                            <a href='formation_detail/" . $get_formation['id_f'] . "'>
-                                                <img style='height:350px; width:800px;' src='images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
+                                            <a href='".baseURL()."formation_detail/" . $get_formation['id_f'] . "'>
+                                                <img style='height:350px; width:800px;' src='".baseURL()."images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
                                                     <div class='des'>
                                                         <h4>" . $get_formation['nom_f'] . "</h4>
                                                         <h5>Durée : " . $get_formation['nb_jour'] . " jours</h5>
@@ -56,8 +56,8 @@ if (!isset($_SESSION['connecte'])) {
                         } else {
                             echo "<div class='col-md-3 wow fadeInUp item' data-wow-delay='0.9s' id='" . $get_formation['id_f'] . "'>
                                         <div class='wrapper'>
-                                            <a href='formation_detail/" . $get_formation['id_f'] . "'>
-                                                <img style='height:350px; width:800px;' src='images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
+                                            <a href='".baseURL()."formation_detail/" . $get_formation['id_f'] . "'>
+                                                <img style='height:350px; width:800px;' src='".baseURL()."images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
                                                     <div class='des'>
                                                         <h4>" . $get_formation['nom_f'] . "</h4>
                                                         <h5>Durée : " . $get_formation['nb_jour'] . " jours</h5>
@@ -73,8 +73,8 @@ if (!isset($_SESSION['connecte'])) {
                     } else {
                         echo "<div class='col-md-3 wow fadeInUp item' data-wow-delay='0.9s' id='" . $get_formation['id_f'] . "'>
                                     <div class='wrapper'>
-                                        <a href='formation_detail/" . $get_formation['id_f'] . "'>
-                                            <img style='height:350px; width:800px;' src='images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
+                                        <a href='".baseURL()."formation_detail/" . $get_formation['id_f'] . "'>
+                                            <img style='height:350px; width:800px;' src='".baseURL()."images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
                                                 <div class='des'>
                                                     <h4>" . $get_formation['nom_f'] . "</h4>
                                                     <h5>Durée : " . $get_formation['nb_jour'] . " jours</h5>

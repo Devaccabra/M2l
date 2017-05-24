@@ -1,4 +1,4 @@
-<link href="http://localhost/M2l/css/formations.css" rel="stylesheet">
+<link href="<?= baseURL() ?>css/formations.css" rel="stylesheet">
 
 <?php
 if (!isset($_SESSION['connecte'])) {
@@ -36,7 +36,7 @@ if (!isset($_SESSION['connecte'])) {
                     $get_salaries = $requete2->fetch();
                     echo "<div class='col-md-4 wow fadeInUp' data-wow-delay='0.9s'>
                                     <div class='wrapper'>
-                                            <img style='width:800px; height:350px' src='http://localhost/M2l/images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
+                                            <img style='width:800px; height:350px' src='".baseURL()."images/formations/" . $get_formation['image'] . "' class='img-responsive' alt='formation img'>
                                     </div>
                               </div>
                               
@@ -108,7 +108,7 @@ if (!isset($_SESSION['connecte'])) {
                                 <div class="col-sm-1">
                                     <div class="thumbnail">
                                         <img class="img-responsive user-photo"
-                                             src="<?= BASE_URL ?>/images/avatar/<?= $get_comment['image']; ?>">
+                                             src="<?= baseURL() ?>images/avatar/<?= $get_comment['image']; ?>">
                                     </div>
                                 </div>
 
@@ -147,7 +147,7 @@ if (!isset($_SESSION['connecte'])) {
                         </div>
 
                         <img id="comment-loading" class="center-block hidden" style="width: 200px"
-                             src="../images/loading.gif">
+                             src="<?= baseURL() ?>images/loading.gif">
 
                     </div>
 

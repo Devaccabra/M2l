@@ -52,7 +52,7 @@
                                         <td>" . $result['prerequis'] . "</td>
                                         <td>" . $result['credits_f'] . "</td>
                                         <td" . $result['date_debut'] . "</td>
-                                        <th class='text-center'><a class='btn btn-danger' href='http://localhost/M2l/admin_supp/1/" . $result['id_f'] . "'>Supprimer</a></th>
+                                        <th class='text-center'><a class='btn btn-danger' href='".baseURL()."admin_supp/1/" . $result['id_f'] . "'>Supprimer</a></th>
                                     </form>
                                   </tr>";
                                             $compteur++;
@@ -116,7 +116,7 @@
                                         <td>" . $result2['login'] . "</td>
                                         <td>" . $result2['jour'] . "</td>
                                         <td>" . $result2['credits'] . "</td>
-                                        <th class='text-center'><a class='btn btn-danger' href='http://localhost/M2l/admin_supp/2/" . $result2['id_s'] . "'>Supprimer</a></th>
+                                        <th class='text-center'><a class='btn btn-danger' href='".baseURL()."admin_supp/2/" . $result2['id_s'] . "'>Supprimer</a></th>
                                     </form>
                                   </tr>";
                                             $compteur++;
@@ -179,7 +179,7 @@
                                         <td>" . $result3['login'] . "</td>
                                         <td>" . $result3['jour'] . "</td>
                                         <td>" . $result3['credits'] . "</td>
-                                        <th class='text-center'><a class='btn btn-danger' href='http://localhost/M2l/admin_supp/3/" . $result3['id_s'] . "'>Supprimer</a></th>
+                                        <th class='text-center'><a class='btn btn-danger' href='".baseURL()."admin_supp/3/" . $result3['id_s'] . "'>Supprimer</a></th>
                                   </tr>";
                                             $compteur++;
                                         }
@@ -239,7 +239,7 @@
                                         <td>" . $result4['cp'] . "</td>
                                         <td>" . $result4['num_rue'] . "</td>
                                         <td>" . $result4['nom_rue'] . "</td>
-                                        <th class='text-center'><a class='btn btn-danger' href='http://localhost/M2l/admin_supp/4/" . $result4['id_p'] . "'>Supprimer</a></th>
+                                        <th class='text-center'><a class='btn btn-danger' href='".baseURL()."admin_supp/4/" . $result4['id_p'] . "'>Supprimer</a></th>
                                   </tr>";
                                             $compteur++;
                                         }

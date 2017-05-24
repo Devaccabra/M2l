@@ -2,9 +2,11 @@
 session_start();
 //session_destroy();
 
-define('BASE_URL',dirname($_SERVER['SCRIPT_NAME']));
-
 require "controller/connection.php";
+
+function baseURL(){
+    return "http://".$_SERVER['SERVER_NAME'].preg_replace('/index.php$/', '', $_SERVER['PHP_SELF']);
+}
 
 if(!isset($_GET['p']) || $_GET['p']=="")
 {
