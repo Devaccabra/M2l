@@ -1,15 +1,7 @@
 <?php
 session_start();
 
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8", "root", "",
-        array(
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
-        ));
-}
-catch (Exception $e) {
-    echo "Erreur de connection";
-}
+require "../model/connection.php";
 
 if (isset($_POST['id_d'])) {
     $destinataire = $_POST['id_d'];
@@ -42,7 +34,7 @@ if (isset($_POST['id_d'])) {
                                         <div class=\"panel-body msg_container_base\">
                                         "; while ($conversation = $requete->fetch()) {
                                             if ($conversation['id_e'] == $expediteur) {
-                                      echo "<div class=\"row msg_container base_sent\">
+                                      echo "<div class=\"row msg_container base_sent message-item\" id='".$conversation['id_m']."'>
                                                 <div class=\"col-md-10 col-xs-10\">
                                                     <div class=\"messages msg_sent\">
                                                         <p>".$conversation['text']."</p>
@@ -55,7 +47,7 @@ if (isset($_POST['id_d'])) {
                                             </div>";
                                             }
                                             if ($conversation['id_e'] == $destinataire) {
-                                     echo "<div class=\"row msg_container base_receive\">
+                                     echo "<div class=\"row msg_container base_receive message-item\" id='".$conversation['id_m']."'>
                                                 <div class=\"col-md-2 col-xs-2 avatar\">
                                                     <img src=\"images/avatar/".$infos_destinataire['image']."\" class=\" img-responsive \">
                                                 </div>
@@ -68,12 +60,15 @@ if (isset($_POST['id_d'])) {
                                             </div>";
                                             }
                                       }
+                                echo "<div id='message-post'>
+                                           
+                                      </div>";
                                 echo "</div>";
                                 echo "<div class=\"panel-footer\">
                                             <div class=\"input-group\">
-                                                <input id=\"btn-input\" type=\"text\" class=\"form-control input-sm chat_input message_instant\" placeholder=\"Write your message here...\" />
+                                                <input id=\"msg-to-send".$infos_destinataire['id_s']."\" type=\"text\" class=\"form-control input-sm chat_input message_instant\" placeholder=\"Ecrivez votre message...\" />
                                                 <span class=\"input-group-btn\">
-                                                <button class=\"btn btn-primary btn-sm\" id=\"btn-chat\">Send</button>
+                                                <button class=\"btn btn-primary btn-sm\" data-id='".$infos_destinataire['id_s']."' id='btn-chat'>Envoyer</button>
                                                 </span>
                                             </div>
                                         </div>

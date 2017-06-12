@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>M2L POWA</title>
+    <link rel="icon"
+          href="images/logo.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -84,7 +87,7 @@ if (isset($_SESSION['connecte']) == true) {
                         <form class="navbar-form" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control barre-chercher" id="barre" placeholder="Search"
-                                       name="q">
+                                       name="q" autocomplete="off">
                                 <ul class="form-group resultat-recherche panel"
                                     style="position: absolute; width: 500px; margin-top: 40px; margin-left: -200px">
                                     <!-- résultat recherche.php -->

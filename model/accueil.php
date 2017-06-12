@@ -9,9 +9,15 @@ if(isset($_POST['login-submit']))
     $login = $_POST['login'];
     $mdp = $_POST['password'];
 
-    $requete = $bdd->query("SELECT * FROM salaries 
-		                        WHERE password ='".$mdp."' 
-								AND login ='".$login."'");
+    $requete = $bdd->prepare("SELECT * FROM salaries 
+		                        WHERE password = :mdp 
+								AND login = :login");
+
+    $requete->bindValue(':mdp', $mdp, PDO::PARAM_STR);
+    $requete->bindValue(':login', $login, PDO::PARAM_STR);
+
+    $requete->execute();
+
     if($requete->rowCount() == 1 )
     {
         $reponse = $requete->fetch();
@@ -37,6 +43,8 @@ if(isset($_POST['login-submit']))
 
     else alert: "Mauvais identifiants";
 }
+
+
 if (isset($_POST['mdp-submit'])) {
 
     $email = $_POST['email'];

@@ -25,8 +25,7 @@ $(document).ready(function() {
     if($(".newChat").on('click', function(){
 
             $.post(
-                'model/create-chat.php', //.php = creve salope tu passes commme un lien normal pour qu'il passe par l'index
-                //et vu que c'est de l'ajax tu echo ta réponse et tu die() pour pas envoyer le layout
+                'model/create-chat.php',
                 {id_d:$(this).attr("data-id")},
                 function(data){
 
@@ -41,8 +40,7 @@ $(document).ready(function() {
     if($(".newChat").on('click', function(){
 
             $.post(
-                'model/recup-message.php', //.php = creve salope tu passes commme un lien normal pour qu'il passe par l'index
-                //et vu que c'est de l'ajax tu echo ta réponse et tu die() pour pas envoyer le layout
+                'model/recup-message.php',
                 {id_d:$(this).attr("data-id")},
                 function(data){
 
@@ -55,10 +53,27 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     if($("#btn-chat").on('click', function(){
-            console.log("jew");
             $.post(
                 'model/envoi-message.php',
-                {message:$(".message_instant")}
+                {
+                    message:$("#msg-to-send"+ $(this).attr('data-id')).val(),
+                    idDestinataire:$(this).attr('data-id')
+                }
             )
+                .done(function(){
+                    $(".message_instant").val("");
+                });
         }));
 });
+
+function getMessage(){
+    $.post("model/get-message.php",{
+        id_d : $("#btn-chat").attr('data-id'),
+        last_message : $(".message-item:last").attr("id")})
+        .done(function(data){
+            $('#message-post').append(data);
+        });
+
+    setTimeout(getMessage,2000);
+}
+getMessage();

@@ -1,15 +1,7 @@
 <?php
 session_start();
 
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8", "root", "",
-        array(
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
-        ));
-}
-catch (Exception $e) {
-    echo "Erreur de connection";
-}
+require "../model/connection.php";
 
         if(isset($_POST['last_comment'])) {
             $formationID = $bdd->query("SELECT id_f FROM commentaire C WHERE id_c = " . $_POST['last_comment'] . " ");

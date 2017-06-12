@@ -80,10 +80,9 @@
 
                                     <tr>
                                         <td>Changer de mot de passe</td>
-                                        <td><input id="mdp-change" name="mdp"
-                                                   placeholder="Nouveau mot de passe"> <input id="mdp-verif-change"
-                                                                                              name="mdp-verif"
-                                                                                              placeholder="Confirmation">
+                                        <td>
+                                            <input type="password" id="mdp-change" name="mdp" placeholder="Nouveau mot de passe">
+                                            <input type="password" id="mdp-verif-change" name="mdp-verif" placeholder="Confirmation">
                                         </td>
                                     </tr>
 

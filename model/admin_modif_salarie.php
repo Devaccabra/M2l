@@ -1,22 +1,15 @@
 <?php
 
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8", "root", "",
-        array(
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
-        ));
-}
-catch (Exception $e) {
-
-}
+require "../model/connection.php";
 
 $new_credit_salarie = $_POST['credit_salarie'];
 $new_jour_salarie = $_POST['jour_salarie'];
 $id_salarie = $_POST['id_salarie'];
 
-var_dump($id_salarie, $new_credit_salarie, $new_jour_salarie);
-$ins = "UPDATE salaries SET jours='".$new_jour_salarie."', credits='".$new_credit_salarie."' WHERE id_s='".$id_salarie."' ";
+$query = $bdd->prepare("UPDATE salaries SET jour= :new_jour_salarie, credits= :new_credit_salarie WHERE id_s= :id_salarie ");
 
-$inse = $bdd->prepare($ins);
+$query->bindValue(':new_credit_salarie', $new_credit_salarie, PDO::PARAM_INT);
+$query->bindValue(':new_jour_salarie', $new_jour_salarie, PDO::PARAM_INT);
+$query->bindValue(':id_salarie', $id_salarie, PDO::PARAM_INT);
 
-$inse->execute();
+$query->execute();

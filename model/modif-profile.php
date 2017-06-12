@@ -2,15 +2,7 @@
 session_start();
 
 
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=m2l;charset=utf8", "root", "",
-        array(
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
-        ));
-}
-catch (Exception $e) {
-
-}
+require "../model/connection.php";
 
     $new_login = $_POST['login'];
     $new_last_name = $_POST['last_name'];

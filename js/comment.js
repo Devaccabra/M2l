@@ -18,9 +18,13 @@ $(document).ready(function() {
 });
 
 function getComment(){
-    $.post("../model/get-comment.php",{ id_f : $("#comment-text").val(), last_comment : $(".comment-item:last").attr("id")}).done(function(data){
-        $('#comment-post').append(data);
-    });
+    $.post("../model/get-comment.php",{ 
+        id_f : $("#comment-text").val(), 
+        last_comment : $(".comment-item:last").attr("id")})
+        .done(function(data){
+            $('#comment-post').append(data);
+        });
+    
     setTimeout(getComment,2000);
     setTimeout(hideLoader,2000);
 }
